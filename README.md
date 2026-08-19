@@ -44,7 +44,7 @@ A 3D-printed housing clips over the radiator pipe and holds a gear-reduced DC mo
 
 
 
-![Labeled component stack](https://raw.githubusercontent.com/TheRachi3d/Home-Radiator-Smartification/748441e472953d0e9742c68039283ab857814356/cad-stack.png)
+![Labeled component stack](cad-stack-v2.png)
 
 
 **Labeled Components: Knob gear, Drivetrain gear ratio, DC motor, buck converter, motor controller, Pi 5, AS5600 agnetic rotary encoder**
@@ -77,7 +77,7 @@ This was my mechanical engineering degree's "flexible project": a self-chosen, s
 Because the assignment was graded on planning, management, and presentation rather than on production-grade deliverables, the CAD files and control code were treated as working files, not somethin[...]
 
 - `cad-hero.png` — CAD assembly render
-- `cad-stack.png` — labeled CAD component stack (knob, gear ratio, motor, buck converter, motor controller, Pi 5)
+- `cad-stack-v2.png` — labeled CAD component stack (knob, gear ratio, motor, buck converter, motor controller, Pi 5)
 - `wiring-diagram.png` — full electrical wiring diagram
 - `finished-build.jpg` — the finished unit, off the radiator and mounted/running, side by side
 - `Moment Problem.mp4` — the housing spinning around the pipe instead of the knob turning
