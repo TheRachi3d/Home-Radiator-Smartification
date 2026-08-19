@@ -22,7 +22,7 @@ Three constraints shaped the mechanical design more than anything electrical:
 
 ## How it works
 
-A 3D-printed housing clips over the radiator pipe and holds a gear-reduced DC motor in line with the valve's thermostatic dial. A gear keyed to the motor shaft meshes directly with a printed gear ring around the dial, so the motor turns the *original* valve knob rather than replacing it — the radiator's manual override still works if the electronics ever fail.
+A 3D-printed housing clips over the radiator pipe and holds a gear-reduced DC motor in line with the valve's thermostatic dial. A gear keyed to the motor shaft meshes directly with a printed gear ring around the dial, so the motor turns the *original* valve knob rather than replacing it.
 
 **Mechanical:**
 - 12 V, 0.7 N·m, 10 RPM DC gearmotor
