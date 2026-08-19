@@ -8,7 +8,7 @@ Motor-driven retrofit that turns a manual radiator valve into a scheduled, phone
 
 ## Why
 
-Student housing in the Netherlands runs on manual thermostatic radiator valves (TRVs): a dial you turn by hand, no schedule, no remote control. Having grown up in a tropical climate, I run cold — I wanted to wake up under the covers to an already-warm room, and fall asleep in a room that had already started cooling down, since people sleep better cool. I also kept forgetting to turn the heater down when I left the flat, which is both wasteful and, over a heating season, not cheap.
+Student housing in the Netherlands runs on manual thermostatic radiator valves (TRVs): a dial you turn by hand, no schedule, no remote control. Having grown up in a tropical climate, I wanted to wake up under the covers to an already-warm room, and fall asleep in a room that had already started cooling down, since people sleep better cool. I also kept forgetting to turn the heater down when I left the flat, which is both wasteful and, over a heating season, not cheap.
 
 Rather than replace the valve with a commercial smart radiator head, I built a small motorized adapter that clamps onto the existing Danfoss valve and turns the stock dial for me, on a schedule, controlled from Home Assistant on my phone.
 
@@ -16,9 +16,9 @@ Rather than replace the valve with a commercial smart radiator head, I built a s
 
 Three constraints shaped the mechanical design more than anything electrical:
 
-- **No permanent fixings.** I was renting, so nothing could be screwed or glued to the wall, the pipe, or the valve body. The entire housing had to clip on and come off clean — which is why it clamps around the radiator pipe instead of bolting to anything.
-- **Heat.** The housing clamps directly onto the radiator pipe, and standard PLA softens well below what a hot-water pipe can reach. I printed it in PETG instead — its higher heat resistance (glass transition around 80 °C, versus roughly 60 °C for standard PLA) was enough margin for the job, without the cost or printing difficulty.
-- **Compact and out of the way.** This sits on a radiator, a big or ugly housing would have been a daily annoyance. The design had to stay tight to the pipe and out of the way.
+- **No permanent fixings -** I was renting, so nothing could be screwed or glued to the wall, the pipe, or the valve body. The entire housing had to clip on and come off clean, which is why it clamps around the radiator pipe instead of bolting to anything.
+- **Heat -** The housing clamps directly onto the radiator pipe, and standard PLA softens well below what a hot-water pipe can reach. I printed it in PETG instead, its higher heat resistance (glass transition around 80 °C, versus roughly 60 °C for standard PLA) was enough margin for the job, without the cost or printing difficulty.
+- **Compact and out of the way -** This sits on a radiator, a big or ugly housing would have been a daily annoyance. The design had to stay tight to the pipe and out of the way.
 
 ## How it works
 
