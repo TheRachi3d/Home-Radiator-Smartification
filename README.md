@@ -2,7 +2,7 @@
 
 **Rachied Obispo** Mechanical Engineering, HAN University of Applied Sciences · [linkedin.com/in/rachied-obispo](https://linkedin.com/in/rachied-obispo)
 
-Motor-driven retrofit that turns a manual radiator valve into a scheduled, phone-controllable heating system — with no screws, glue, or other permanent fixings.
+Motor-driven retrofit that turns a manual radiator valve into a scheduled, phone-controllable heating system with no screws, glue, or other permanent fixings.
 
 ![Finished build: the assembly off the radiator (left) and mounted and running (right)](finished-build.jpg)
 
@@ -28,7 +28,7 @@ A 3D-printed housing clips over the radiator pipe and holds a gear-reduced DC mo
 - 12 V, 0.7 N·m, 10 RPM DC gearmotor
 - Custom 3D-printed gear pair, 41:12 tooth ratio → 3.42:1 torque multiplication at the valve
 - 56 mm printed gear ring clamped around the Danfoss dial
-- Printed housing clips onto the radiator pipe — no permanent modification to the radiator or valve
+- The printed housing that clips onto the radiator pipe
 
 **Electronics:**
 - Raspberry Pi 5 as the controller
@@ -53,7 +53,7 @@ The Danfoss valve on this particular radiator was old and stiff, turning it took
 
 `Troubleshooting.mp4` is me diagnosing it by hand, isolating whether the motor itself was underpowered or whether the mount was the real problem. It was the mount: the clamp gave the housing one rotational degree of freedom too many.
 
-The fix couldn't be a screw or a bracket into the wall, that would have broken the original design requirement. Instead I added a series of support wedges along the length of the housing, each shaped to make precise, friction-tight contact between the housing profile and the wall behind it: not fastened, just dimensioned accurately enough (precision 3D printing and careful assembly) to seat snugly at multiple points along the housing rather than one. Spreading the contact along the length reacted the torque into the wall far more effectively than a single point could, removing the housing's last rotational degree of freedom around the pipe without a single screw or drop of glue — so the motor's torque went into turning the knob instead of spinning the housing. `Moment Problem_Partially Solved.mp4` shows it working, I've called it "partially solved" there isn't an update video of the build with all the support wedges installed with closer tolerances. 
+The fix couldn't be a screw or a bracket into the wall, that would have broken the original design requirement. Instead I added a series of support wedges along the length of the housing, each shaped to make precise, friction-tight contact between the housing profile and the wall behind it: not fastened, just dimensioned accurately enough (precision 3D printing and careful assembly) to seat snugly at multiple points along the housing rather than one. Spreading the contact along the length reacted the torque into the wall far more effectively than a single point could, removing the housing's last rotational degree of freedom around the pipe without a single screw or glue, so the motor's torque went into turning the knob instead of spinning the housing. `Moment Problem_Partially Solved.mp4` shows it working, I've called it "partially solved" there isn't an update video of the build with all the support wedges installed with closer tolerances. 
 
 ## Outcome
 
