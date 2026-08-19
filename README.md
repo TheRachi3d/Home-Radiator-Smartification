@@ -2,7 +2,7 @@
 
 **Rachied Obispo** — Mechanical Engineering, HAN University of Applied Sciences · [linkedin.com/in/rachied-obispo](https://linkedin.com/in/rachied-obispo)
 
-Motor-driven retrofit that turns a manual radiator valve into a scheduled, phone-controllable heating system — with no screws, glue, or other permanent fixings, since the flat was rented.
+Motor-driven retrofit that turns a manual radiator valve into a scheduled, phone-controllable heating system — with no screws, glue, or other permanent fixings.
 
 ![Finished build: the assembly off the radiator (left) and mounted and running (right)](finished-build.jpg)
 
@@ -17,8 +17,8 @@ Rather than replace the valve with a commercial smart radiator head, I built a s
 Three constraints shaped the mechanical design more than anything electrical:
 
 - **No permanent fixings.** I was renting, so nothing could be screwed or glued to the wall, the pipe, or the valve body. The entire housing had to clip on and come off clean — which is why it clamps around the radiator pipe instead of bolting to anything.
-- **Heat.** The housing clamps directly onto the radiator pipe, and standard PLA softens well below what a hot-water pipe can reach. I printed it in PETG instead — its higher heat resistance (glass transition around 80 °C, versus roughly 60 °C for standard PLA) was enough margin for the job, without the cost or printing difficulty of something like PC or nylon.
-- **Compact and out of the way.** This sits on a radiator in a lived-in room, not a lab bench, so bulk wasn't free — a big or ugly housing would have been a daily annoyance. The design had to stay tight to the pipe and valve rather than sprawl.
+- **Heat.** The housing clamps directly onto the radiator pipe, and standard PLA softens well below what a hot-water pipe can reach. I printed it in PETG instead — its higher heat resistance (glass transition around 80 °C, versus roughly 60 °C for standard PLA) was enough margin for the job, without the cost or printing difficulty.
+- **Compact and out of the way.** This sits on a radiator, a big or ugly housing would have been a daily annoyance. The design had to stay tight to the pipe and out of the way.
 
 ## How it works
 
@@ -49,15 +49,15 @@ A 3D-printed housing clips over the radiator pipe and holds a gear-reduced DC mo
 
 ## The moment problem
 
-The Danfoss valve on this particular radiator was old and stiff — turning it took noticeably more torque than a fresh valve would. That exposed a problem the no-permanent-fixings constraint had quietly created: because the housing could only clamp around the pipe rather than bolt rigidly to the wall or the valve body, the reaction torque from turning a stiff knob had nowhere to go. Basic action-reaction — whatever torque the motor puts into the valve, an equal and opposite torque pushes back on the motor's own mount — and with nothing resisting that reaction, it just spun the *entire housing* around the pipe instead of turning the knob. `media/moment-problem.mp4` shows it: the housing rotating on the pipe, the knob barely moving.
+The Danfoss valve on this particular radiator was old and stiff — turning it took noticeably more torque than a fresh valve would. That exposed a problem the no-permanent-fixings constraint had quietly created: because the housing could only clamp around the pipe rather than bolt rigidly to the wall or the valve body, the reaction torque from turning a stiff knob had nowhere to go. Basic action-reaction — whatever torque the motor puts into the valve, an equal and opposite torque pushes back on the motor's own mount — and with nothing resisting that reaction, it just spun the *entire housing* around the pipe instead of turning the knob. `Moment Problem.mp4` shows it: the housing rotating on the pipe, the knob barely moving.
 
-`media/troubleshooting.mp4` is me diagnosing it by hand — isolating whether the motor itself was underpowered or whether the mount was the real problem. It was the mount: the clamp gave the housing one rotational degree of freedom too many.
+`Troubleshooting.mp4` is me diagnosing it by hand — isolating whether the motor itself was underpowered or whether the mount was the real problem. It was the mount: the clamp gave the housing one rotational degree of freedom too many.
 
-The fix couldn't be a screw or a bracket into the wall — that would have broken the original design requirement. Instead I added a series of support wedges along the length of the housing, each shaped to make precise, friction-tight contact between the housing profile and the wall behind it: not fastened, just dimensioned accurately enough (precision 3D printing and careful assembly) to seat snugly at multiple points along the housing rather than one. Spreading the contact along the length reacted the torque into the wall far more effectively than a single point could, removing the housing's last rotational degree of freedom around the pipe without a single screw or drop of glue — so the motor's torque went into turning the knob instead of spinning the housing. `media/moment-problem-partially-solved.mp4` shows it working — I've called it "partially solved" because the fix resolved the rotation but I never got the chance to fully iron out some rough edges (visible in the clip) before the project was shelved. This is the honest state I left it in.
+The fix couldn't be a screw or a bracket into the wall — that would have broken the original design requirement. Instead I added a series of support wedges along the length of the housing, each shaped to make precise, friction-tight contact between the housing profile and the wall behind it: not fastened, just dimensioned accurately enough (precision 3D printing and careful assembly) to seat snugly at multiple points along the housing rather than one. Spreading the contact along the length reacted the torque into the wall far more effectively than a single point could, removing the housing's last rotational degree of freedom around the pipe without a single screw or drop of glue — so the motor's torque went into turning the knob instead of spinning the housing. `Moment Problem_Partially Solved.mp4` shows it working — I've called it "partially solved" there isn't an update video of the build with all the support wedges installed with closer tolerances. 
 
 ## Outcome
 
-The finished system ran the actual heating schedule in my room for about three months — automated, controlled from my phone via Home Assistant, no manual dial-turning. It delivered exactly what I'd set out to build: a warm room to wake up into, a cooling room to fall asleep in, and one less thing to remember when leaving the flat. It wasn't discontinued because it stopped working — I needed the Raspberry Pi 5 for a different project and hadn't built a second unit, so it's been sitting unused since.
+The finished system ran the actual heating schedule in my room for about three months — automated, controlled from my phone via Home Assistant when needed, no manual dial-turning. It delivered exactly what I'd set out to build: a warm room to wake up into, a cooling room to fall asleep in, and one less thing to remember when leaving the flat. It wasn't discontinued because it stopped working — I needed the Raspberry Pi 5 for a different project and hadn't built a second unit, so it's been sitting unused since.
 
 This was my mechanical engineering degree's "flexible project": a self-chosen, self-scoped assignment worth 80 hours. What the course actually graded wasn't build polish — it was planning, project management, and presentation: writing a plan of approach, managing scope and time against it, and presenting the result convincingly. Within that, I planned, managed, and built the thing independently — CAD design and torque calculations, 3D printing and assembly, electronics integration and power budgeting, control code, and the Home Assistant integration all mine end to end. My supervisor, who I reported progress to against my own plan of approach, assessed it well specifically because it touched design, electronics, software, and manufacturing in one project — and was particularly interested in the phone control via Home Assistant.
 
@@ -65,13 +65,13 @@ This was my mechanical engineering degree's "flexible project": a self-chosen, s
 
 Because the assignment was graded on planning, management, and presentation rather than on production-grade deliverables, the CAD files and control code were treated as working files, not something to document for reuse — they were never cleaned up and aren't in a shareable state today. What's preserved is the presentation record instead:
 
-- `media/cad-hero.png` — CAD assembly render
-- `media/cad-stack.png` — labeled CAD component stack (knob, gear ratio, motor, buck converter, motor controller, Pi 5)
-- `media/wiring-diagram.png` — full electrical wiring diagram
-- `media/finished-build.jpg` — the finished unit, off the radiator and mounted/running, side by side
-- `media/moment-problem.mp4` — the housing spinning around the pipe instead of the knob turning
-- `media/troubleshooting.mp4` — diagnosing it
-- `media/moment-problem-partially-solved.mp4` — the anti-rotation fix, working
+- `cad-hero.png` — CAD assembly render
+- `cad-stack.png` — labeled CAD component stack (knob, gear ratio, motor, buck converter, motor controller, Pi 5)
+- `wiring-diagram.png` — full electrical wiring diagram
+- `finished-build.jpg` — the finished unit, off the radiator and mounted/running, side by side
+- `moment-problem.mp4` — the housing spinning around the pipe instead of the knob turning
+- `troubleshooting.mp4` — diagnosing it
+- `moment-problem-partially-solved.mp4` — the anti-rotation fix, working
 
 ## Skills this project drew on
 
