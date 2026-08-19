@@ -37,9 +37,20 @@ A 3D-printed housing clips over the radiator pipe and holds a gear-reduced DC mo
 - 12 V→5.1 V buck converter to run the Pi from the same supply as the motor, sized for the combined draw of both
 - Single 12 V DC supply for the whole assembly, common ground across supply, buck converter, Pi, driver, and encoder
 
-| ![CAD assembly](cad-hero.png) | ![Labeled component stack](cad-stack.png) |
-|---|---|
-| Assembly, valve side | Labeled component stack: knob, gear ratio, motor, buck converter, motor controller, Pi 5 |
+
+![CAD assembly](cad-hero.png)
+
+**Full Assembly: With Housing and Rotation Support**
+
+
+
+![Labeled component stack](cad-stack.png)
+
+
+**Labeled Components: Knob gear, Drivetrain gear ratio, DC motor, buck converter, motor controller, Pi 5, AS5600 agnetic rotary encoder**
+
+
+
 
 **Full wiring diagram:**
 
