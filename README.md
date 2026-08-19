@@ -1,6 +1,6 @@
 # Home Radiator Smartification
 
-**Rachied Obispo** — Mechanical Engineering, HAN University of Applied Sciences · [linkedin.com/in/rachied-obispo](https://linkedin.com/in/rachied-obispo)
+**Rachied Obispo** Mechanical Engineering, HAN University of Applied Sciences · [linkedin.com/in/rachied-obispo](https://linkedin.com/in/rachied-obispo)
 
 Motor-driven retrofit that turns a manual radiator valve into a scheduled, phone-controllable heating system — with no screws, glue, or other permanent fixings.
 
