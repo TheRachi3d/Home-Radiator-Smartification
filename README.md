@@ -4,7 +4,7 @@
 
 Motor-driven retrofit that turns a manual radiator valve into a scheduled, phone-controllable heating system — with no screws, glue, or other permanent fixings, since the flat was rented.
 
-![Finished build: the assembly off the radiator (left) and mounted and running (right)](media/finished-build.jpg)
+![Finished build: the assembly off the radiator (left) and mounted and running (right)](finished-build.jpg)
 
 ## Why
 
@@ -37,13 +37,13 @@ A 3D-printed housing clips over the radiator pipe and holds a gear-reduced DC mo
 - 12 V→5.1 V buck converter to run the Pi from the same supply as the motor, sized for the combined draw of both
 - Single 12 V DC supply for the whole assembly, common ground across supply, buck converter, Pi, driver, and encoder
 
-| ![CAD assembly](media/cad-hero.png) | ![Labeled component stack](media/cad-stack.png) |
+| ![CAD assembly](cad-hero.png) | ![Labeled component stack](cad-stack.png) |
 |---|---|
 | Assembly, valve side | Labeled component stack: knob, gear ratio, motor, buck converter, motor controller, Pi 5 |
 
 **Full wiring diagram:**
 
-![Wiring diagram: Raspberry Pi 5 + AS5600 + Cytron MD10C + DC motor](media/wiring-diagram.png)
+![Wiring diagram: Raspberry Pi 5 + AS5600 + Cytron MD10C + DC motor](wiring-diagram.png)
 
 **Control:** The Pi runs a scheduler that drives the motor to timed dial positions (e.g., open before I wake up, close before bed) and exposes control to [Home Assistant](https://www.home-assistant.io/), so I could turn the schedule on/off or override it from my phone from anywhere.
 
